@@ -87,6 +87,14 @@ const App: Component = () => {
         type="search"
         value={state.search}
         onInput={(e) => setState("search", e.target.value)}
+        placeholder="Search for a country..."
+        class={ow({
+          "px-4": true,
+          "py-2": true,
+          border: true,
+          rounded: true,
+          "mt-4": true,
+        })}
       />
       <div
         class={ow({
